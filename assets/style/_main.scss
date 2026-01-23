@@ -1,0 +1,54 @@
+header {
+  background: #010e08;
+}
+li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 8px;
+  transition: all 0.3s ease;
+  &:hover {
+    transform: translateY(-3px);
+    filter: drop-shadow(0 0 2px #0036863d);
+  }
+}
+ul {
+  display: flex;
+  gap: 40px;
+}
+li {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container {
+  padding: 15px;
+}
+
+.nav__x {
+  display: none;
+}
+.nav__ham {
+  display: none;
+}
+
+
+.hero{
+  &__img{
+    display: flex;
+    position: relative;
+    justify-content: center;
+  }
+  &__img-child{
+    position: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+}
