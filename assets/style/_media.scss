@@ -1,7 +1,0 @@
-$mobile: 576px;
-
-@mixin devices($size) {
-  @media screen and (min-width: $size) {
-    @content;
-  }
-}

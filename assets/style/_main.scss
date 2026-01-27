@@ -1,5 +1,9 @@
 header {
-  background: #010e08;
+  background: #121517;
+}
+
+.hero{
+  background: #121517;
 }
 li a {
   display: flex;
@@ -7,14 +11,24 @@ li a {
   text-decoration: none;
   gap: 8px;
   transition: all 0.3s ease;
+  color: #d9d9d9;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+
   &:hover {
     transform: translateY(-3px);
     filter: drop-shadow(0 0 2px #0036863d);
+    background: #2a9e55;
   }
 }
 ul {
   display: flex;
-  gap: 40px;
+  gap: 90px;
 }
 li {
   display: flex;
@@ -23,32 +37,115 @@ li {
 
 .nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-}
-.container {
-  padding: 15px;
-}
-
-.nav__x {
-  display: none;
-}
-.nav__ham {
-  display: none;
+  gap: 94px;
+  padding: 10px 0;
 }
 
+.hero {
+  display: flex;
+  justify-content: space-between;
 
-.hero{
-  &__img{
-    display: flex;
-    position: relative;
-    justify-content: center;
+  &__titles p {
+    margin-top: 53px;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 19px;
+    color: #d9d9d9;
+
+    line-height: 163%;
+    letter-spacing: -2%;
   }
-  &__img-child{
-    position: inherit;
+
+  &__buttons {
+    margin-top: 50px;
+    display: flex;
+    gap: 18px;
+  }
+
+  &__buttons button {
+    border-radius: 82.83px;
+    padding: 20px 60px 20px 60px;
+    border: 1px solid gray;
+    background: #121517;
+    color: white;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: SemiBold;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+  }
+  &__buttons button:hover {
+    background: #2a9e55;
+    transform: translateY(-3px);
+    filter: drop-shadow(0 0 2px #00861dbb);
+  }
+
+  &__svgs {
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+  }
+
+  &__kards {
+    top: 90px;
+    position: relative;
+    margin-top: 60px;
+    display: flex;
+    border-radius: 46px;
+    background: #fbfbfb;
+    justify-content: space-between;
+    width: 1050px;
+    margin: 0 auto;
+    padding: 30px;
+  }
+  &__kards-wehave {
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
+    transform: translate(-80px, -80px);
   }
+
+  &__kard-titles {
+    text-align: center;
+  }
+
+  &__kard-titles p:first-child {
+    color: #121517;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 28px;
+    line-height: 163%;
+    letter-spacing: -2%;
+    margin-bottom: 10px;
+  }
+
+  &__kard-titles p:last-child {
+    color: #121517e5;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 133%;
+    letter-spacing: -2%;
+  }
+}
+
+h1 {
+  margin-top: 50px;
+  font-family: Montserrat;
+  font-weight: 800;
+  font-style: ExtraBold;
+  font-size: 70px;
+  color: #ffffff;
+}
+
+h1 span {
+  font-family: Montserrat;
+  font-weight: 800;
+  font-style: ExtraBold;
+  font-size: 80px;
+  color: #35c66b;
 }
